@@ -3,6 +3,10 @@
   "version": "0.0.0-development",
   "description": "Get the sunrise and sunset for your location, right from your terminal!",
   "main": "index.js",
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "sunrise": "bin/sunrise"
   },
