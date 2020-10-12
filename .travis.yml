@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+branches:
+  only:
+    - master
+notifications:
+  email: false
+node_js:
+  - '10.20.1'
+script:
+  - yarn global add codecov -g
+  - yarn build
+  - yarn test
+  - codecov -f coverage/*.json
+after_success:
+  - codecov
+  - yarn semantic-release
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
