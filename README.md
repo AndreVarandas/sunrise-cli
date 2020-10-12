@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/logo.png" width="350" height="350" alt="Sunrise cli logo">
+    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/master/art/logo.png" width="350" height="350" alt="Sunrise cli logo">
 </p>
 
 # sunrise-cli
@@ -8,11 +8,11 @@ Get the sunrise and sunset for your location or target, right from your terminal
 [![npm (scoped)](https://img.shields.io/npm/v/@varandas/sunrise-cli.svg)](https://www.npmjs.com/package/@varandas/sunrise-cli)
 [![npm](https://img.shields.io/npm/dm/@varandas/sunrise-cli.svg)](https://npmcharts.com/compare/@varandas/sunrise-cli)
 
-[![Build Status](https://travis-ci.org/AndreVarandas/sunrise-cli.svg?branch=main)](https://travis-ci.org/AndreVarandas/sunrise-cli)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/AndreVarandas/sunrise-cli/main.svg?style=flat-square)](https://codecov.io/gh/AndreVarandas/sunrise-cli/)
+[![Build Status](https://travis-ci.org/AndreVarandas/sunrise-cli.svg?branch=master)](https://travis-ci.org/AndreVarandas/sunrise-cli)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/AndreVarandas/sunrise-cli/master.svg?style=flat-square)](https://codecov.io/gh/AndreVarandas/sunrise-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Known Vulnerabilities](https://snyk.io/test/github/AndreVarandas/sunrise-cli/badge.svg?targetFile=package.json)](https://snyk.io/test/github/AndreVarandas/sunrise-cli?targetFile=package.json)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AndreVarandas/sunrise-cli/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AndreVarandas/sunrise-cli/blob/master/LICENSE)
 
 ## Motivation
 Developers rarely take their eyes from the terminal, completely disregarding what's it like outside. 
@@ -20,7 +20,7 @@ Developers rarely take their eyes from the terminal, completely disregarding wha
 With this cli I can now **easily** and quickly check how it is currently.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/meme.jpg" alt="Me during the day meme">
+    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/master/art/meme.jpg" alt="Me during the day meme">
 </p>
 
 ## Installation
@@ -76,7 +76,7 @@ $ sunrise
 ```
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/default.png" alt="Sunrise cli example call">
+    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/master/art/default.png" alt="Sunrise cli example call">
 </p>
 
 The extended response includes:
@@ -93,7 +93,7 @@ The extended response includes:
 - Astronomical Twilight End
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/extended.png" alt="Sunrise cli extended call">
+    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/master/art/extended.png" alt="Sunrise cli extended call">
 </p>
 
 It is reaaaly extended, make sure you have a wide terminal window.
