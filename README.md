@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/logo.jpg" width="400" height="260" alt="Sunrise cli logo">
+    <img src="https://raw.githubusercontent.com/AndreVarandas/sunrise-cli/main/art/logo.png" width="400" height="260" alt="Sunrise cli logo">
 </p>
 
 # sunrise-cli
