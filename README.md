@@ -30,11 +30,11 @@ With this cli I can now **easily** and quickly check how it is currently.
 To intall the cli run:
 
 ```bash
-$ yarn global add @varandas/sunrise
+$ yarn global add @varandas/sunrise-cli
 
 OR with NPM
 
-$ npm install -g @varandas/sunrise
+$ npm install -g @varandas/sunrise-cli
 ```
 
 And that's it, you're now empowered!
