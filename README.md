@@ -25,6 +25,8 @@ With this cli I can now **easily** and quickly check how it is currently.
 
 ## Installation
 
+> Note: you can also use `npx`! See example section.
+
 To intall the cli run:
 
 ```bash
@@ -57,6 +59,15 @@ The cli also accepts a few arguments:
 ### Example 
 
 Get sunrise/sunset details for New York
+
+If you're using npx as an alternative, you can replace `$ sunrise` with `$ npx @varandas/sunrise-cli`
+before passing in the arguments.
+
+```bash
+$ npx @varandas/sunrise-cli --lat 40.730610 --long -73.935242
+```
+
+With global install
 
 ```bash
 $ sunrise --lat 40.730610 --long -73.935242
