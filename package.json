@@ -4,7 +4,6 @@
   "description": "Get the sunrise and sunset for your location, right from your terminal!",
   "main": "index.js",
   "bin": {
-    "@varandas/sunrise": "bin/sunrise",
     "sunrise": "bin/sunrise"
   },
   "scripts": {
