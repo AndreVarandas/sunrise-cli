@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 branches:
   only:
-    - main
+    - master
 notifications:
   email: false
 node_js:
