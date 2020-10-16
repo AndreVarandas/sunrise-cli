@@ -11,6 +11,7 @@ export type SunriseOptions = {
   ip?: string;
   lat?: Number;
   long?: Number;
+  date?: string;
   extended?: Boolean;
 };
 
@@ -18,12 +19,14 @@ export class Sunrise {
   private ip: string | undefined;
   long: Number | undefined;
   lat: Number | undefined;
+  date: string | undefined;
   extended: Boolean | undefined;
 
   constructor (options: SunriseOptions) {
     this.ip = options.ip
     this.lat = options.lat
     this.long = options.long
+    this.date = options.date
     this.extended = options.extended
   }
 
@@ -45,7 +48,7 @@ export class Sunrise {
     }
 
     // Get sunrise details and log them
-    let data = await this.getSunriseDataForLatLng(this.lat!, this.long!)
+    let data = await this.getSunriseDataForLatLng(this.lat!, this.long!, this.date)
     data = convertToLocalTime(data)
     this.printResults(data)
   }
@@ -69,10 +72,14 @@ export class Sunrise {
    * @param long {Number} Longitude
    * @returns {SunsetApiResult}
    */
-  async getSunriseDataForLatLng (lat: Number, long: Number) {
-    const response = await axios.get(
-      `https://api.sunrise-sunset.org/json?lat=${this.lat}&lng=${this.long}&formatted=0`
-    )
+  async getSunriseDataForLatLng (lat: Number, long: Number, date?: string) {
+    let url: string = `https://api.sunrise-sunset.org/json?lat=${this.lat}&lng=${this.long}&formatted=0`;
+
+    if (date) {
+      url += `&date=${date}`;
+    }
+
+    const response = await axios.get(url)
 
     return response.data.results
   }
