@@ -9,12 +9,14 @@ const helpMessage = chalk`
       {dim $} {bold sunrise}
       {dim $} {bold sunrise} --ip {underline "target-ip-address"}
       {dim $} {bold sunrise} --ip {underline "target-ip-address"} --extended
+      {dim $} {bold sunrise} --date {underline "YYYY-MM-DD"}
 
   {bold OPTIONS}
       --help                    Shows this help message.
       --ip {underline  target-ip-address}   The ip address that will be used as location.
       --lat {underline latitude}            Location latitude.
       --long {underline longitude}          Location longitude.
+      --date {underline date}               Date in YYYY-MM-DD format.
       --extended                Logs extended information.
 `
 
@@ -32,6 +34,7 @@ function parseArgsIntoOptions (rawArgs: string[]): SunriseOptions | undefined {
         '--lat': Number,
         '--long': Number,
         '--ip': String,
+        '--date': String,
         '--extended': Boolean,
         '-h': '--help',
         '-e': '--extended'
@@ -46,6 +49,7 @@ function parseArgsIntoOptions (rawArgs: string[]): SunriseOptions | undefined {
       ip: args['--ip'],
       lat: args['--lat'],
       long: args['--long'],
+      date: args['--date'],
       extended: args['--extended']
     }
   } catch (error) {
@@ -87,6 +91,16 @@ function validateOptions (options: SunriseOptions) {
   if (!options.lat && options.long) {
     console.error('Error: --lat argument is also required when using --long.')
     process.exit(2)
+  }
+
+  if (options.date) {
+    const dateRegularExp = /^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/gm
+    const isValidDate = dateRegularExp.test(options.date)
+
+    if (!isValidDate) {
+      console.error('Invalid date! Please enter a valid date (YYYY-MM-DD).')
+      process.exit(2)
+    }
   }
 }
 
