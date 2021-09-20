@@ -5,7 +5,7 @@ branches:
 notifications:
   email: false
 node_js:
-  - '10.20.1'
+  - '14.17.1'
 script:
   - yarn global add codecov -g
   - yarn build
