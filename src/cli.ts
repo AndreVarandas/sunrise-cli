@@ -52,7 +52,7 @@ function parseArgsIntoOptions (rawArgs: string[]): SunriseOptions | undefined {
       date: args['--date'],
       extended: args['--extended']
     }
-  } catch (error) {
+  } catch (error: any) {
     if (error.code === 'ARG_UNKNOWN_OPTION') {
       console.log(error.message)
       process.exit(2)
