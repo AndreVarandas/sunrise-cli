@@ -60,8 +60,8 @@ export class Sunrise {
    * @param ip {string} Target ip
    * @returns {Number[]}
    */
-  getLatLongForIp (ip: string) {
-    return geoip.lookup(ip)?.ll
+  getLatLongForIp (ip: string): Number[] | [] {
+    return geoip.lookup(ip)?.ll || []
   }
 
   /**
